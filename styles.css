@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    padding: 10px;
+    background-color: blue;
+    border-radius: 2px;
+    position: relative;
+}
+
+.navbar h3 {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+video {
+    width: 80vw;
+    height: 25vh;
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.search-link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    transition: all 3s ease-in-out;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+#search-input {
+    width: 55vw;
+    height: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.nav-link {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menuitems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin: 40px;
+
+}
+
+.message {
+    height: 50vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.card {
+    transition: box-shadow 0.3s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px 5px gray;
+    transform: scale(1.1);
+
+    .card-description {
+        display: block;
+    }
+}
+
+.card-body {
+    max-width: 400px;
+}
+
+.card-description {
+    display: none;
+    transition: display 5s ease-in-out;
+}
+
+.card img {
+    width: 400px;
+    object-fit: cover;
+    height: 250px;
+}
+
+@media screen and (max-width: 1200px) {
+    #search-input {
+        width: 35vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 576px) {
+    .search-link {
+        display: none;
+
+    }
+
+    #search-input {
+        width: 90vw;
+
+    }
+
+    video {
+        height: 15vh;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-toggler {
+        display: block;
+        background-color: black;
+
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .search-link {
+        display: none;
+
+    }
+
+    #search-input {
+        width: 90vw;
+
+    }
+
+    video {
+        width: 80vw;
+        height: 20vh;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-toggler {
+        display: block;
+        background-color: black;
+
+    }
+
+}
