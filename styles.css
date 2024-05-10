@@ -3,6 +3,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-image: url("https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148695092.jpg");
 }
 
 .video {
@@ -69,7 +70,7 @@ video {
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
-    margin: 40px;
+    margin: 60px;
 
 }
 
@@ -103,7 +104,7 @@ video {
 }
 
 .card-description {
-    display: none;
+    
     transition: display 5s ease-in-out;
 }
 
@@ -179,5 +180,5 @@ video {
         background-color: black;
 
     }
-
+    
 }
